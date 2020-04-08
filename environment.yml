@@ -9,3 +9,5 @@ dependencies:
   - pip
   - prodigal
   - bbtools
+  - multiqc
+  - fastqc
