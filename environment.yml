@@ -4,6 +4,9 @@ channels:
   - bioconda
   - defaults
   - agbiome
+  - ursky
+  - astrobiomike
+  
 dependencies:
   - python
   - pip
@@ -11,3 +14,22 @@ dependencies:
   - bbtools
   - multiqc
   - fastqc
+  - trimmomatic
+  - fastp
+  - spades
+  - megahit
+  - blast
+  - metabat2
+  - binsanity
+  - checkm-genome
+  - gtdbtk
+  - gtotree
+  - bowtie2
+  - minimap2
+  - quast
+  - drep
+  - das_tool
+  - concoct
+  
+  
+  
