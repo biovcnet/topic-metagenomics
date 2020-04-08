@@ -10,6 +10,8 @@
 * You should do genome sequencing instead if…
 * You should do transcriptomics instead if…
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/topic-metagenomics/master)
+
 # Lesson 2: Taxonomic Classification using kmers (with adapter-trimmed reads)
 * The power of kmers
 * Choosing a metagenomics classifier
