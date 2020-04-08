@@ -3,7 +3,9 @@ channels:
   - conda-forge
   - bioconda
   - defaults
+  - agbiome
 dependencies:
   - python
   - pip
   - prodigal
+  - bbtools
