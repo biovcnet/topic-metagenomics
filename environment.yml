@@ -1,0 +1,9 @@
+name: env-name-here-does-not-matter
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python
+  - pip
+  - prodigal
