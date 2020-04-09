@@ -12,10 +12,10 @@ dependencies:
   - pip
 #quality control
   - bbtools
-  - multiqc
-  - fastqc
-  - trimmomatic
-  - fastp
+#  - multiqc
+#  - fastqc
+#  - trimmomatic
+#  - fastp
 #assembly
 #  - spades
 #  - megahit
@@ -25,12 +25,12 @@ dependencies:
 #  - bowtie2
 #  - minimap2
 #binning
-#  - metabat2
-#  - binsanity
-#  - checkm-genome
-#  - das_tool
-#  - concoct
+  - metabat2
+  - binsanity
+  - das_tool
+  - concoct
 #annotation
+#  - checkm-genome
 #  - blast
 #  - prodigal
 #  - gtdbtk
