@@ -12,15 +12,15 @@ dependencies:
   - pip
 #quality control
   - bbtools
-  - multiqc
-  - fastqc
-  - trimmomatic
-  - fastp
+#  - multiqc
+#  - fastqc
+#  - trimmomatic
+#  - fastp
 #assembly
-#  - spades
-#  - megahit
-#  - quast
-#  - drep
+  - spades
+  - megahit
+  - quast
+  - drep
 #mapping
 #  - bowtie2
 #  - minimap2
