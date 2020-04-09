@@ -17,10 +17,10 @@ dependencies:
 #  - trimmomatic
 #  - fastp
 #assembly
-#  - spades
-#  - megahit
-#  - quast
-#  - drep
+  - spades
+  - megahit
+  - quast
+  - drep
 #mapping
 #  - bowtie2
 #  - minimap2
