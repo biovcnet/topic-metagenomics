@@ -22,8 +22,8 @@ dependencies:
   - quast
   - drep
 #mapping
-#  - bowtie2
-#  - minimap2
+  - bowtie2
+  - minimap2
 #binning
   - metabat2
   - binsanity
