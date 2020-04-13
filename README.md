@@ -9,8 +9,9 @@
 * You should do amplicon sequencing instead if…
 * You should do genome sequencing instead if…
 * You should do transcriptomics instead if…
+## You got data! Now what?
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab) Quality Control Demo using FastQC and MultiQC [by Alexis Marshall]
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/topic-metagenomics/master?urlpath=lab)
 
 # Lesson 2: Taxonomic Classification using kmers (with adapter-trimmed reads)
 * The power of kmers
