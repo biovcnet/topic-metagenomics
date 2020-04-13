@@ -14,6 +14,7 @@
 
 
 # Lesson 2: Taxonomic Classification using kmers (with adapter-trimmed reads)
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 * The power of kmers
 * Choosing a metagenomics classifier
   * http://ccb.jhu.edu/software/choosing-a-metagenomics-classifier/
@@ -21,31 +22,21 @@
 * + Adapter trimming using cutadapt, bbduk, etc.
 
 # Lesson 3: Taxonomic Classification using sketches (with adapter + quality filtered reads)
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 * How does MinHash work?
 * Choosing a metagenomics sketcher
 * Demo using mash, sourmash, sendsketch, etc.
 * + Quality filtering using cutadapt, bbduk, etc.
 
 # Lesson 4: Taxonomic Classification using mapping (with adapter + quality filtered reads)
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 * How does mapping work?
 * Choosing a reference genome
 * Choosing a metagenomic read mapper
 * Demo using bowtie, bwa, bbmap, etc.
 
-# Lesson 5: Functional Classification using HMMs (with adapter + quality filtered reads)
-* How do HMMs work?
-* What is an open reading frame?
-* Choosing an hmm profiler
-* Demo using hmmer, barrnap, etc.
-
-# Lesson 6: Functional Classification using orthologs (with merged reads)
-* What is the difference between a homolog and an ortholog?
-* Choosing an orthology database
-* Querying an orthology database
-* Demo using InterProScan, MG-RAST, MGnify, etc.
-* + Read merging using FLASH, bbmerge, etc.
-
-# Lesson 7: Assembly (with error-corrected reads)
+# Lesson 5: Assembly (with error-corrected reads)
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * How does sequence assembly work?
 * What is a deBruijn graph?
 * Choosing an assembler
@@ -53,6 +44,7 @@
 * + Error correction using BayesHammer/SPAdes, tadpole, etc.
 
 # Lesson 8: Assembly Quality and Statistics (with contigs)
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * How do you determine the quality of an assembly?
 * Choosing an assembly quality metric
 * Demo using QUAST, etc.
