@@ -5,10 +5,10 @@
 # Released Lessons
 
 # Lesson 1: What is metagenomics? [[Presentation]](https://docs.google.com/presentation/d/e/2PACX-1vSUJqDdgpz5yTPcOoHF_XLS1pxextNel7F8-i9j6YRgXkcKJg0rdneY00lcaoBzvJj-UxcTvhrJUoTH/pub?start=false&loop=false&delayms=600000)
-## What kinds of questions can metagenomics be used to answer?
-## Is metagenomics right for me?
-## Yay! You got data! Now what?
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab) Quality Control Demo using FastQC and MultiQC [by Alexis Marshall]
+* What kinds of questions can metagenomics be used to answer?
+* Is metagenomics right for me?
+* Yay! You got data! Now what?
+  * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab) Quality Control Demo using FastQC and MultiQC [by Alexis Marshall]
 
 ---
 
