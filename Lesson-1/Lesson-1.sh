@@ -5,7 +5,7 @@ do
 gunzip ${file}
 done
 
-mkdir 00_FastQC_RAW
+mkdir 00_FastQC
 
 for file in *.fastq;
 do
