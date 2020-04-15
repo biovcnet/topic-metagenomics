@@ -9,7 +9,7 @@
 * What kinds of questions can metagenomics be used to answer?
 * Is metagenomics right for me?
 * Yay! You got data! Now what?
-## Demo 1: Quality Control Demo using FastQC and MultiQC
+# Demo 1: Quality Control Demo using FastQC and MultiQC
 * [[Video Tutorial]](https://www.youtube.com/watch?v=7jRTyfdIXLo) by Alexis Marshall
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 
