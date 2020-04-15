@@ -1,4 +1,15 @@
-# Start Here: [TOPIC: Metagenomics](https://github.com/biovcnet/biovcnet.github.io/wiki/TOPIC:-Metagenomics)
+# [TOPIC: Metagenomics](https://github.com/biovcnet/biovcnet.github.io/wiki/TOPIC:-Metagenomics)
+
+# Prerequisites for topic
+* [A working Unix environment](https://github.com/biovcnet/biovcnet.github.io/wiki/1.-Setting-up-a-local-Linux-(or-Unix)-environment)
+* [Experience with the command line](https://github.com/biovcnet/biovcnet.github.io/wiki/2.-Using-the-Command-line)
+
+# Overview
+This topic will cover:
+* how to use shotgun metagenomic sequencing technologies to answer biological questions
+* the methodologies used to perform metagenomic studies on the taxonomy, function, evolution, and ecology of microorganisms
+* the intricacies of the specific tools and databases that can used for varying levels of specificity.
+
 
 ---
 
