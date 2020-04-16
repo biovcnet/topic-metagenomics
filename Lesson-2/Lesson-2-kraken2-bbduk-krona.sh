@@ -108,7 +108,7 @@ bbduk.sh in=BOX-10-56-15377_S368_L001_R1_001.fastq.gz in2=BOX-10-56-15377_S368_L
 kraken2 --db silva --report kraken2_report_trimmed_paired.tsv --paired trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz trimmed_BOX-10-56-15377_S368_L001_R2_001.fastq.gz > /dev/null
 
 # view the report
-head kraken2_report_paired.tsv
+head kraken2_report_trimmed_paired.tsv
 
 # sort the report first by taxonomic level and then descending order of matches, then filter for only Genera 
 sort -k4,4 -k2,2rn kraken2_report_trimmed_paired.tsv  | grep "  G       " | head
