@@ -13,23 +13,23 @@ set -e #fail on any errors
 ## KRAKEN2
 # the full kraken2 manual can be found here: https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown
 
+# due to time, space, and memory constraints on Binder, 
+# we're going to use the SILVA rRNA database rather than 
+# a more complete database containing millions of genes/proteins
+
 # install the latest version of Kraken2 (conda install doesn't work due to ftp problems as of 4/16/2020)
 bash Lesson-2/install-kraken2.sh
 
 # add kraken executables to $PATH
 export PATH=$PATH:`pwd`/kraken2-2.0.9-beta/
 
-# due to time, space, and memory constraints on Binder, 
-# we're going to use the SILVA rRNA database rather than 
-# a more complete database containing millions of genes/proteins
-
-# add database to $KRAKEN2_DB_PATH
+# add taxonomy database to $KRAKEN2_DB_PATH
 export KRAKEN2_DB_PATH=`pwd`/kraken2-2.0.9-beta/
 
 # move into data directory
 cd data
 
-# run kraken2 on forward reads from one sample
+# run kraken2 on forward reads from one sample using the silva database
 kraken2 --db silva BOX-10-56-15377_S368_L001_R1_001.fastq.gz
 
 # the output format looks like this
@@ -42,7 +42,8 @@ kraken2 --db silva BOX-10-56-15377_S368_L001_R1_001.fastq.gz
 #                                                                            the next 5 kmers mapped to taxid 1
 #                                                                                      2 kmers mapped to taxid 44130
 
-# run kraken2 and return the classifications in a Report format as 'kraken2_report.tsv' with the raw data redirected to 'kraken2_raw.txt'
+# run kraken2 and return the classifications in a Report format as 'kraken2_report.tsv' 
+# with the raw data redirected to 'kraken2_raw.txt'
 kraken2 --db silva --report kraken2_report.tsv BOX-10-56-15377_S368_L001_R1_001.fastq.gz > kraken2_raw.txt
 
 # view the report
