@@ -29,6 +29,12 @@ cd kraken2-2.0.9-beta/
 # add kraken executables to $PATH
 export PATH=$PATH:`pwd`
 
+# due to time, space, and memory constraints on Binder, 
+# we're going to use the SILVA rRNA database rather than 
+# a more complete database containing millions of genes/proteins
+# to build the standard database, which uses 100Gb, 
+# you would do e.g. kraken2-build --standard --threads 4 --db standard
+
 # build SILVA database
 kraken2-build --db silva --special silva
 
@@ -55,7 +61,7 @@ kraken2 --db silva BOX-10-56-15377_S368_L001_R1_001.fastq.gz
 kraken2 --db silva --report kraken2_report.tsv BOX-10-56-15377_S368_L001_R1_001.fastq.gz > kraken2_raw.txt
 
 # view the report
-less kraken2_report.tsv
+head kraken2_report.tsv
 
 # notice that most of the reads were classified despite these samples being from shotgun metagenomes rather than amplicons
 # that seems a little fishy, doesn't it?
@@ -71,19 +77,19 @@ bbduk.sh in=BOX-10-56-15377_S368_L001_R1_001.fastq.gz out=trimmed_BOX-10-56-1537
 kraken2 --db silva --report kraken2_report_trimmed.tsv trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz > /dev/null
 
 #view the report, notice that many fewer sequences were classified
-less kraken2_report_trimmed.tsv
+head kraken2_report_trimmed.tsv
 
 #then run kraken2 again on the trimmed reads, and redirect the raw output to /dev/null
 kraken2 --db silva --confidence 0.50 --report kraken2_report_trimmed_confidence.tsv trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz > /dev/null
 
 # view the report, notice that fewer than half of the sequences were confidently classified
-less kraken2_report_trimmed_confidence.tsv
+head kraken2_report_trimmed_confidence.tsv
 
 # run kraken2 and return the classifications in a MetaPhlan Report format as 'kraken2_report_mpa.tsv' with the raw data redirected to 'kraken2_raw.txt'
 kraken2 --db silva --use-mpa-style --report kraken2_report_trimmed_mpa.tsv trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz > /dev/null
 
 # view the report
-less -S kraken2_report_trimmed_mpa.tsv
+head -S kraken2_report_trimmed_mpa.tsv
 
 # trim the paired end sequences using bbduk
 # bbtools author Brian Bushnell recommends the following options for adapter trimming
@@ -102,10 +108,10 @@ bbduk.sh in=BOX-10-56-15377_S368_L001_R1_001.fastq.gz in2=BOX-10-56-15377_S368_L
 kraken2 --db silva --report kraken2_report_trimmed_paired.tsv --paired trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz trimmed_BOX-10-56-15377_S368_L001_R2_001.fastq.gz > /dev/null
 
 # view the report
-less kraken2_report_paired.tsv
+head kraken2_report_paired.tsv
 
 # sort the report first by taxonomic level and then descending order of matches, then filter for only Genera 
-sort -k4,4 -k2,2rn kraken2_report_trimmed_paired.tsv  | grep "  G       " | less
+sort -k4,4 -k2,2rn kraken2_report_trimmed_paired.tsv  | grep "  G       " | head
 
 # run a loop to do adapter trimming and kraken2 classification for all samples
 rm trimmed*
