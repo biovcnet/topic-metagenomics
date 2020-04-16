@@ -73,23 +73,23 @@ head kraken2_report.tsv
 # bbduk uses a kmer-matching approach to identify unwanted DNA strings (in this case, sequencing adapters) and then trim the reads
 bbduk.sh in=BOX-10-56-15377_S368_L001_R1_001.fastq.gz out=trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz ref=adapters ktrim=r
 
-#then run kraken2 again on the trimmed reads, and redirect the raw output to /dev/null
+# then run kraken2 again on the trimmed reads, and redirect the raw output to /dev/null
 kraken2 --db silva --report kraken2_report_trimmed.tsv trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz > /dev/null
 
-#view the report, notice that many fewer sequences were classified
+# view the report, notice that many fewer sequences were classified
 head kraken2_report_trimmed.tsv
 
-#then run kraken2 again on the trimmed reads, and redirect the raw output to /dev/null
+# kraken2 has a 'confidence' flag that is a value in the range of 0-1
 kraken2 --db silva --confidence 0.50 --report kraken2_report_trimmed_confidence.tsv trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz > /dev/null
 
 # view the report, notice that fewer than half of the sequences were confidently classified
 head kraken2_report_trimmed_confidence.tsv
 
-# run kraken2 and return the classifications in a MetaPhlan Report format as 'kraken2_report_mpa.tsv' with the raw data redirected to 'kraken2_raw.txt'
+# run kraken2 and return the classifications in a MetaPhlan Report format as 'kraken2_report_mpa.tsv'
 kraken2 --db silva --use-mpa-style --report kraken2_report_trimmed_mpa.tsv trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz > /dev/null
 
 # view the report
-head -S kraken2_report_trimmed_mpa.tsv
+head kraken2_report_trimmed_mpa.tsv
 
 # trim the paired end sequences using bbduk
 # bbtools author Brian Bushnell recommends the following options for adapter trimming
