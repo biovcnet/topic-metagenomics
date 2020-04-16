@@ -143,7 +143,7 @@ export PATH=$PATH:`pwd`/bin
 cd ../data
 
 # now run Krona on each output file
-for prefix in `ls *.gz | cut -f1 -d'_' | sort -u`; do
+for prefix in `ls trimmed_*.gz | cut -f1 -d'_' | sort -u`; do
 ktImportTaxonomy -o krona_${prefix}.html -t 5 -m 3 kraken2_report_paired_${prefix}.tsv
 done
 
