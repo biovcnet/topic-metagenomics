@@ -1,3 +1,7 @@
+#!/bin/bash
+
+cd ~/topic-metagenomics
+
 # download and install Krona tools
 wget https://github.com/marbl/Krona/releases/download/v2.7.1/KronaTools-2.7.1.tar
 tar xvf KronaTools-2.7.1.tar
