@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 ## This script goes with the tutorial for Lesson2
 ## You can open the Binder here: https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab
 ## click "Terminal" to open the terminal emulator, which will also install this repo
