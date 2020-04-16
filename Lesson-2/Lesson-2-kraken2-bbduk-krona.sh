@@ -109,7 +109,7 @@ read1=( ${prefix}*_R1_001.fastq.gz ) #the parentheses assign the globbed filenam
 read2=( ${prefix}*_R2_001.fastq.gz )
 
 bbduk.sh in=${read1} in2=${read2} out=trimmed_${read1} out2=trimmed_${read2} ref=adapters ktrim=r k=23 mink=11 hdist=1 tbo ow=t
-kraken2 --db silva --confidence 0.50 --report kraken2_report_paired_${prefix}.tsv --paired trimmed_${read1} trimmed_${read2} > /dev/null
+kraken2 --db silva --report kraken2_report_paired_${prefix}.tsv --paired trimmed_${read1} trimmed_${read2} > /dev/null
 done
 
 ## KRONA
