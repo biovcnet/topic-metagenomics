@@ -1,5 +1,7 @@
 ## This script goes with the tutorial for Lesson2
 ## You can open the Binder here: https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab
+## click "Terminal" to open the terminal emulator, which will also install this repo
+
 
 ## This tutorial will:
 # 1) demonstrate the installation and usage of Kraken2 for taxonomic classification using kmers
