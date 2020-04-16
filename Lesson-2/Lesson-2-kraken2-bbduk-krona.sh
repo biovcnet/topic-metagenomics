@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -e #fail on any errors
 
 ## This script goes with the tutorial for Lesson2
 ## You can open the Binder here: https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab
@@ -128,7 +128,7 @@ done
 # the full Krona manual can be found here: https://github.com/marbl/Krona/wiki/KronaTools
 
 # download and install Krona tools
-cd
+cd ..
 wget https://github.com/marbl/Krona/releases/download/v2.7.1/KronaTools-2.7.1.tar
 tar xvf KronaTools-2.7.1.tar
 cd KronaTools-2.7.1
@@ -137,7 +137,7 @@ cd KronaTools-2.7.1
 #wget http://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
 #mv taxdump.tar.gz taxonomy/
 #to use the SILVA taxonomy:
-cp ~/topic-metagenomics/kraken2-2.0.9-beta/silva/taxonomy/* ./
+cp ~/topic-metagenomics/kraken2-2.0.9-beta/silva/taxonomy/* ./taxonomy/
 ./updateTaxonomy.sh --only-build
 export PATH=$PATH:`pwd`/bin
 cd ../data
@@ -147,5 +147,6 @@ for prefix in `ls *.gz | cut -f1 -d'_' | sort -u`; do
 ktImportTaxonomy -o krona_${prefix}.html -t 5 -m 3 kraken2_report_paired_${prefix}.tsv
 done
 
-# in the file explorer on the left, double click one of the Krona output files to view it
+# in the file explorer on the left, navigate to the topic-metagenomics/data directory
+# double click one of the Krona output files to view it
 # click "Trust HTML" in the upper left of the window that opens up
