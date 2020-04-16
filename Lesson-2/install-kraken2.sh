@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# need to install kraken2 from scratch because conda version uses ftp rather than http to get silva files
 cd ~/topic-metagenomics
 
 # download kraken2 source code
