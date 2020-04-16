@@ -1,3 +1,5 @@
+cd ~/topic-metagenomics
+
 # download kraken2 source code
 wget https://github.com/DerrickWood/kraken2/archive/v2.0.9-beta.tar.gz
 
