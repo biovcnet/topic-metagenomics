@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd ~/topic-metagenomics
 
 # download kraken2 source code
