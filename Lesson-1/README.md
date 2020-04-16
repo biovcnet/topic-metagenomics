@@ -1,0 +1,8 @@
+## References
+* [Gill, R. J., Baldock, K. C., Brown, M. J., Cresswell, J. E., Dicks, L. V., Fountain, M. T., ... & Ollerton, J. (2016). Protecting an ecosystem service: approaches to understanding and mitigating threats to wild insect pollinators. In Advances in ecological research (Vol. 54, pp. 135-206). Academic Press.](https://doi.org/10.1016/bs.aecr.2015.10.007)
+* [Sharpton, T. J. (2014). An introduction to the analysis of shotgun metagenomic data. Frontiers in plant science, 5, 209.](https://doi.org/10.3389/fpls.2014.00209)
+* [Uritskiy, G. V., DiRuggiero, J., & Taylor, J. (2018). MetaWRAP—a flexible pipeline for genome-resolved metagenomic data analysis. Microbiome, 6(1), 1-13.](https://doi.org/10.1186/s40168-018-0541-1)
+* [Visconti, A., Martin, T. C., & Falchi, M. (2018). YAMP: a containerized workflow enabling reproducibility in metagenomics research. GigaScience, 7(7), giy072.](https://doi.org/10.1093/gigascience/giy072)
+* [Tamames, J., & Puente-Sanchez, F. (2019). SqueezeMeta, a highly portable, fully automatic metagenomic analysis pipeline. Frontiers in microbiology, 9, 3349.](https://doi.org/10.3389/fmicb.2018.03349)
+* [White III, R. A., Brown, J., Colby, S., Overall, C. C., Lee, J. Y., Zucker, J., ... & Jansson, J. K. (2017). ATLAS (Automatic Tool for Local Assembly Structures)-a comprehensive infrastructure for assembly, annotation, and genomic binning of metagenomic and metatranscriptomic data. PeerJ Preprints, 5, e2843v1.](https://doi.org/10.7287/peerj.preprints.2843v1)
+* [Mitchell, A. L., Almeida, A., Beracochea, M., Boland, M., Burgin, J., Cochrane, G., ... & Sakharova, E. (2020). MGnify: the microbiome analysis resource in 2020. Nucleic acids research, 48(D1), D570-D578.](https://doi.org/10.1093/nar/gkz1035)
