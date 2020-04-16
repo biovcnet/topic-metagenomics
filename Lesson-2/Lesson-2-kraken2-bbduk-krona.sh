@@ -5,44 +5,29 @@ set -e #fail on any errors
 ## You can open the Binder here: https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab
 ## click "Terminal" to open the terminal emulator, which will also install this repo
 
-
 ## This tutorial will:
-# 1) demonstrate the installation and usage of Kraken2 for taxonomic classification using kmers
+# 1) demonstrate the usage of Kraken2 for taxonomic classification using kmers
 # 2) demonstrate the usage of bbtools/bbduk.sh for adapter trimming using kmers
-# 3) demonstrate the installation and usage of Krona for visualization of classification results
+# 3) demonstrate the usage of Krona for visualization of classification results
 
 ## KRAKEN2
 # the full kraken2 manual can be found here: https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown
 
-# download kraken2 source code
-wget https://github.com/DerrickWood/kraken2/archive/v2.0.9-beta.tar.gz
-
-# extract source code
-tar xvzf v2.0.9-beta.tar.gz
-
-# move into source code directory
-cd kraken2-2.0.9-beta/
-
-# run installation script
-./install_kraken2.sh ./
+# install the latest version of Kraken2 (conda install doesn't work due to ftp problems as of 4/16/2020)
+bash Lesson-2/install-kraken2.sh
 
 # add kraken executables to $PATH
-export PATH=$PATH:`pwd`
+export PATH=$PATH:`pwd`/kraken2-2.0.9-beta/
 
 # due to time, space, and memory constraints on Binder, 
 # we're going to use the SILVA rRNA database rather than 
 # a more complete database containing millions of genes/proteins
-# to build the standard database, which uses 100Gb, 
-# you would do e.g. kraken2-build --standard --threads 4 --db standard
-
-# build SILVA database
-kraken2-build --db silva --special silva
 
 # add database to $KRAKEN2_DB_PATH
-export KRAKEN2_DB_PATH=`pwd`
+export KRAKEN2_DB_PATH=`pwd`/kraken2-2.0.9-beta/
 
 # move into data directory
-cd ../data
+cd data
 
 # run kraken2 on forward reads from one sample
 kraken2 --db silva BOX-10-56-15377_S368_L001_R1_001.fastq.gz
@@ -68,6 +53,7 @@ head kraken2_report.tsv
 
 ## BBDUK
 # the full manual for bbduk can be found here: https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/
+# bbtools was installed using conda
 
 # let's try trimming the sequences first using bbduk
 # bbduk uses a kmer-matching approach to identify unwanted DNA strings (in this case, sequencing adapters) and then trim the reads
@@ -92,15 +78,16 @@ kraken2 --db silva --use-mpa-style --report kraken2_report_trimmed_mpa.tsv trimm
 head kraken2_report_trimmed_mpa.tsv
 
 # trim the paired end sequences using bbduk
+
 # bbtools author Brian Bushnell recommends the following options for adapter trimming
 # ref=adapters # use the built in adapters.fa file containing all known Illumina adapters
-# ktrim=r # trim from the right (3') end of the sequence
-# k=23 # use a kmer length of 23 bp
-# mink=11 # allow a minimum kmer length of 11 bp at the end of the sequence
-# hdist=1 # allow a maximum of 1 mismatch
-# tbo # trim by overlap
-# tpe # trim both reads to be the same length
-# ow=t # allow overwriting of existing files
+# ktrim=r      # trim from the right (3') end of the sequence
+# k=23         # use a kmer length of 23 bp
+# mink=11      # allow a minimum kmer length of 11 bp at the end of the sequence
+# hdist=1      # allow a maximum of 1 mismatch
+# tbo          # trim by overlap
+# tpe          # trim both reads to be the same length
+# ow=t         # allow overwriting of existing files
 
 bbduk.sh in=BOX-10-56-15377_S368_L001_R1_001.fastq.gz in2=BOX-10-56-15377_S368_L001_R2_001.fastq.gz out=trimmed_BOX-10-56-15377_S368_L001_R1_001.fastq.gz out2=trimmed_BOX-10-56-15377_S368_L001_R2_001.fastq.gz ref=adapters ktrim=r k=23 mink=11 hdist=1 tpe tbo ow=t
 
@@ -126,25 +113,14 @@ done
 
 ## KRONA
 # the full Krona manual can be found here: https://github.com/marbl/Krona/wiki/KronaTools
+# Krona was installed using conda
 
-# download and install Krona tools
-cd ..
-wget https://github.com/marbl/Krona/releases/download/v2.7.1/KronaTools-2.7.1.tar
-tar xvf KronaTools-2.7.1.tar
-cd KronaTools-2.7.1
-./install.pl --prefix ./
-# to use most recent version of NCBI taxonomy:
-#wget http://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz
-#mv taxdump.tar.gz taxonomy/
-#to use the SILVA taxonomy:
-cp ~/topic-metagenomics/kraken2-2.0.9-beta/silva/taxonomy/* ./taxonomy/
-./updateTaxonomy.sh --only-build
-export PATH=$PATH:`pwd`/bin
-cd ../data
+#to use the SILVA taxonomy we installed for Kraken2:
+ktUpdateTaxonomy.sh --only-build ~/topic-metagenomics/kraken2-2.0.9-beta/silva/taxonomy/
 
 # now run Krona on each output file
-for prefix in `ls trimmed_*.gz | cut -f1 -d'_' | sort -u`; do
-ktImportTaxonomy -o krona_${prefix}.html -t 5 -m 3 kraken2_report_paired_${prefix}.tsv
+for prefix in `ls trimmed_*.gz | cut -f2 -d'_' | sort -u`; do
+ktImportTaxonomy -o krona_${prefix}.html -t 5 -m 3 -tax ~/topic-metagenomics/kraken2-2.0.9-beta/silva/taxonomy/ kraken2_report_paired_${prefix}.tsv
 done
 
 # in the file explorer on the left, navigate to the topic-metagenomics/data directory
