@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# krona now installed using conda so this is superfluous
+
 cd ~/topic-metagenomics
 
 # download and install Krona tools
