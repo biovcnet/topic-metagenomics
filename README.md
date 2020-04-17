@@ -29,6 +29,7 @@ This topic will cover:
 # Planned Lessons
 
 # Lesson 2: Taxonomic Classification using kmers
+* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-2/Metagenomics_Lesson_2.pdf)
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 * The power of kmers
 * Choosing a metagenomics classifier
