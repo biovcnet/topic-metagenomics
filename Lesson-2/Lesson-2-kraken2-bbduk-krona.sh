@@ -99,7 +99,7 @@ kraken2 --db silva --report kraken2_report_trimmed_paired.tsv --paired trimmed_B
 head kraken2_report_trimmed_paired.tsv
 
 # sort the report first by taxonomic level and then descending order of matches, then filter for only Genera 
-sort -k4,4 -k2,2rn kraken2_report_trimmed_paired.tsv  | grep "  G       " | head
+sort -k4,4 -k2,2rn kraken2_report_trimmed_paired.tsv  | grep G | head
 
 # run a loop to do adapter trimming and kraken2 classification for all samples
 rm trimmed*
