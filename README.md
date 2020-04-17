@@ -20,21 +20,25 @@ This topic will cover:
 * What kinds of questions can metagenomics be used to answer?
 * Is metagenomics right for me?
 * Yay! You got data! Now what?
-## Demo 1: Quality Control Demo using FastQC and MultiQC
+## Demo 1: Quality Control using FastQC and MultiQC
 * [[Video Tutorial]](https://www.youtube.com/watch?v=7jRTyfdIXLo) by Alexis Marshall
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
+
+# Lesson 2: Taxonomic Classification using kmers
+* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-2/Metagenomics%20Lesson%202.pdf) by Eric Collins
+* The power of kmers
+* Choosing a metagenomics classifier
+
+## Demo 2: Taxonomic Classification and Adapter Trimming using k-mers
+* Programs used:
+  * kraken2
+  * bbduk
+  * krona
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 
 ---
 
 # Planned Lessons
-
-# Lesson 2: Taxonomic Classification using kmers
-* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-2/Metagenomics_Lesson_2.pdf)
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
-* The power of kmers
-* Choosing a metagenomics classifier
-* Demo using kraken2, centrifuge, kaiju, etc.
-* + Adapter trimming using cutadapt, bbduk, etc.
 
 # Lesson 3: Taxonomic Classification using MinHash sketches
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
