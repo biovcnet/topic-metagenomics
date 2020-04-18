@@ -15,7 +15,7 @@ This topic will cover:
 
 # Released Lessons
 
-# Lesson 1: What is metagenomics?
+# [Lesson 1](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-1): What is metagenomics?
 * [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-1/Metagenomics_Lesson_1.pdf) and [[Presentation Video]](https://youtu.be/EkmuvRQ2tWw) by Eric Collins
 * What kinds of questions can metagenomics be used to answer?
 * Is metagenomics right for me?
@@ -24,7 +24,7 @@ This topic will cover:
 * [[Video Tutorial]](https://www.youtube.com/watch?v=7jRTyfdIXLo) by Alexis Marshall
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 
-# Lesson 2: Taxonomic Classification using kmers
+# [Lesson 2](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-2): Taxonomic Classification using kmers
 * [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-2/Metagenomics%20Lesson%202.pdf) by Eric Collins
 * The power of kmers
 * Choosing a metagenomics classifier
