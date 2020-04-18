@@ -30,7 +30,7 @@ This topic will cover:
 * Choosing a metagenomics classifier
 
 ## Demo 2: Taxonomic Classification and Adapter Trimming using k-mers
-* [[Video Tutorial]](https://www.youtube.com/watch?v=HqPiWvjIrew)
+* [[Video Tutorial]](https://www.youtube.com/watch?v=HqPiWvjIrew) by Eric Collins
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 * Programs used:
   * kraken2
