@@ -20,9 +20,14 @@ This topic will cover:
 * What kinds of questions can metagenomics be used to answer?
 * Is metagenomics right for me?
 * Yay! You got data! Now what?
+
 ## Demo 1.1: Quality Control using FastQC and MultiQC
 * [[Video Tutorial]](https://www.youtube.com/watch?v=7jRTyfdIXLo) by Alexis Marshall
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
+* [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-1/Demo1.1_fastqc_multiqc.sh)
+* Programs used:
+  * fastqc
+  * multiqc
 
 # [Lesson 2](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-2): Taxonomic Classification using kmers
 * [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-2/Metagenomics%20Lesson%202.pdf) and [[Presentation Video]](https://www.youtube.com/watch?v=MpScSM_d3Vo) by Eric Collins
@@ -32,6 +37,7 @@ This topic will cover:
 ## Demo 2.1: Taxonomic Classification and Adapter Trimming using k-mers
 * [[Video Tutorial]](https://www.youtube.com/watch?v=HqPiWvjIrew) by Eric Collins
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
+* [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-2/Demo2.1_kraken2_bbduk_krona.sh)
 * Programs used:
   * kraken2
   * bbduk
@@ -40,8 +46,12 @@ This topic will cover:
 ## Demo 2.2: Adapter and quality trimming using trimmomatic
 * [[Video Tutorial]](https://www.youtube.com/watch?v=Q4UU6k13090) by Ella Sieradzki
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
+* [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-2/Demo2.2_trimmomatic)
 * Programs used:
+  * fastqc
+  * multiqc
   * trimmomatic
+
 ---
 
 # Planned Lessons
