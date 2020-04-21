@@ -63,39 +63,39 @@ This topic will cover:
 * Demo using tadpole, megahit, SPAdes, etc.
 * + Error correction using BayesHammer/SPAdes, tadpole, etc.
 
-# Lesson 8: Assembly Quality and Statistics
+# Lesson 6: Assembly Quality and Statistics
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * How do you determine the quality of an assembly?
 * Choosing an assembly quality metric
 * Demo using QUAST, etc.
 
-# Lesson 9: Assembly Visualization
+# Lesson 7: Assembly Visualization
 * What is an assembly graph useful for?
 * Demo using Bandage
 
-# Lesson 10: Binning
+# Lesson 8: Binning
 * How does metagenomic binning work?
 * Choosing a metagenomic binner
 * Demo using metabat2, CONCOCT, etc.
 
-# Lesson 11: Evaluating bins
+# Lesson 9: Evaluating bins
 * What are single-copy core genes?
 * Choosing a bin evaluation tool
 * Demo using CheckM, etc.
 
-# Lesson 12: Phylogenomics
+# Lesson 10: Phylogenomics
 * What are single-copy core genes?
 * Basics of sequence alignment
 * Basics of phylogenetic tree construction
 * Demo using GToTree, GTDBtk, etc.
 
-# Lesson 13: Workflows -- Putting it all together
+# Lesson 11: Workflows -- Putting it all together
 * A review of existing workflows
 * Why you probably shouldn’t invent your own workflow
 * What to do when you inevitably decide to invent your own workflow anyway
 * Demo using SnakeMake, Nextflow, etc.
 
-# Lesson 14: Workflows: Online Portals
+# Lesson 12: Workflows: Online Portals
 * Anvi’o
 * MGnify
 * MG-RAST
