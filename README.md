@@ -69,6 +69,7 @@ This topic will cover:
 * Choosing a reference genome
 * Choosing a metagenomic read mapper
 * Demo using bowtie, bwa, bbmap, etc.
+* Demo using kaiju, centrifuge?
 
 # Lesson 5: Assembly
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
