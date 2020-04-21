@@ -1,0 +1,31 @@
+cd data
+
+# run FASTQC on forward reads
+fastqc R1_CAT0113.0315.DNA.fastq.gz
+
+# run FASTQC on reverse reads
+fastqc R2_CAT0113.0315.DNA.fastq.gz
+
+# run MULTIQC on FASTQC output
+multiqc .
+
+# run TRIMMOMATIC using CROP
+trimmomatic PE R1_CAT0113.0315.DNA.fastq.gz R2_CAT0113.0315.DNA.fastq.gz crop_R1_CAT0113_paired.fastq crop_R1_CAT0113_unpaired.fastq crop_R2_CAT0113_paired.fastq crop_R2_CAT0113_unpaired.fastq CROP:275 MINLEN:200
+
+# run FASTQC on cropped forward paired reads
+fastqc crop_R1_CAT0113_paired.fastq
+
+# run FASTQC on cropped reverse paired reads
+fastqc crop_R2_CAT0113_paired.fastq
+
+# run TRIMMOMATIC using SLIDINGWINDOW
+trimmomatic PE R1_CAT0113.0315.DNA.fastq.gz R2_CAT0113.0315.DNA.fastq.gz trim_R1_CAT0113_paired.fastq trim_R1_CAT0113_unpaired.fastq trim_R2_CAT0113_paired.fastq trim_R2_CAT0113_unpaired.fastq MINLEN:200 SLIDINGWINDOW:15:25 
+
+# run FASTQC on trimmed forward paired reads
+fastqc trim_R1_CAT0113_paired.fastq
+
+# run FASTQC on trimmed reverse paired reads
+fastqc trim_R2_CAT0113_paired.fastq
+
+# run MULTIQC on all FASTQC output
+multiqc .
