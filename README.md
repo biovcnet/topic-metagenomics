@@ -49,7 +49,7 @@ This topic will cover:
 * + Quality filtering using cutadapt, bbduk, etc.
 
 # Lesson 4: Taxonomic Classification using BWT mapping
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * How does mapping work?
 * Choosing a reference genome
 * Choosing a metagenomic read mapper
