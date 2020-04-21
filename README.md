@@ -20,7 +20,7 @@ This topic will cover:
 * What kinds of questions can metagenomics be used to answer?
 * Is metagenomics right for me?
 * Yay! You got data! Now what?
-## Demo 1: Quality Control using FastQC and MultiQC
+## Demo 1.1: Quality Control using FastQC and MultiQC
 * [[Video Tutorial]](https://www.youtube.com/watch?v=7jRTyfdIXLo) by Alexis Marshall
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 
@@ -29,7 +29,7 @@ This topic will cover:
 * The power of kmers
 * Choosing a metagenomics classifier
 
-## Demo 2: Taxonomic Classification and Adapter Trimming using k-mers
+## Demo 2.1: Taxonomic Classification and Adapter Trimming using k-mers
 * [[Video Tutorial]](https://www.youtube.com/watch?v=HqPiWvjIrew) by Eric Collins
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 * Programs used:
@@ -37,6 +37,11 @@ This topic will cover:
   * bbduk
   * krona
 
+## Demo 2.2: Adapter and quality trimming using trimmomatic
+* [[Video Tutorial]](https://www.youtube.com/watch?v=Q4UU6k13090) by Ella Sieradzki
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
+* Programs used:
+  * trimmomatic
 ---
 
 # Planned Lessons
