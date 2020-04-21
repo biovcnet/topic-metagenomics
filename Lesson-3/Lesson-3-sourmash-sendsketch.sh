@@ -18,13 +18,9 @@ curl -O -L https://github.com/ctb/2017-sourmash-lca/raw/master/tara-delmont-Supp
 
 sed -i 's/\r/\n/g' tara-delmont-SuppTable3.csv
 
-# replace 'na' with 'sp.' as species to avoid sourmash error
-
-sed -i 's/na$/sp./' tara-delmont-SuppTable3.csv
-
 # Build a sourmash LCA database named delmont.lca.json:
 
-sourmash lca index tara-delmont-SuppTable3.csv delmont.lca.json delmont-subsample-sigs/*.sig
+sourmash lca index -f tara-delmont-SuppTable3.csv delmont.lca.json delmont-subsample-sigs/*.sig
 
 # Using the LCA database to classify signatures
 # We can now use delmont.lca.json to classify signatures with k-mers according to the database we just created. (Note, the database is completely self-contained at this point.)
