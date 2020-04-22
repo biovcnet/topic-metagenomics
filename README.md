@@ -52,7 +52,7 @@ This topic will cover:
   * multiqc
   * trimmomatic
 
-# Lesson 3: Taxonomic Classification using MinHash sketches
+# [Lesson 3](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-3): Taxonomic Classification using MinHash sketches
 * [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-3/Metagenomics_Lesson_3.pdf) by Eric Collins
 * How does MinHash work?
 * How do Bloom filters work?
