@@ -29,10 +29,10 @@ This topic will cover:
   * fastqc
   * multiqc
 
-# [Lesson 2](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-2): Taxonomic Classification using kmers
+# [Lesson 2](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-2): Taxonomic Classification using k-mers
 * [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-2/Metagenomics%20Lesson%202.pdf) and [[Presentation Video]](https://www.youtube.com/watch?v=MpScSM_d3Vo) by Eric Collins
-* The power of kmers
-* Choosing a metagenomics classifier
+* The power of k-mers
+* Choosing a k-mer classifier
 
 ## Demo 2.1: Taxonomic Classification and Adapter Trimming using k-mers
 * [[Video Tutorial]](https://www.youtube.com/watch?v=HqPiWvjIrew) by Eric Collins
@@ -52,16 +52,24 @@ This topic will cover:
   * multiqc
   * trimmomatic
 
+# Lesson 3: Taxonomic Classification using MinHash sketches
+* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-3/Metagenomics_Lesson_3.pdf) by Eric Collins
+* How does MinHash work?
+* How do Bloom filters work?
+* Choosing a MinHash sketcher
+
+## Demo 3.1: Taxonomic Classification using sourmash and sendsketch, and quality trimming using bbduk
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
+* [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-3/Demo3.1_sourmash_bbduk_sendsketch.sh)
+* Programs used:
+  * sourmash
+  * sendsketch
+  * bbduk
+
 ---
 
 # Planned Lessons
 
-# Lesson 3: Taxonomic Classification using MinHash sketches
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
-* How does MinHash work?
-* Choosing a metagenomics sketcher
-* Demo using mash, sourmash, sendsketch, etc.
-* + Quality filtering using cutadapt, bbduk, etc.
 
 # Lesson 4: Taxonomic Classification using BWT mapping
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
