@@ -10,6 +10,10 @@ cd data
 curl -L https://osf.io/bw8d7/download?version=1 -o delmont-subsample-sigs.tar.gz
 tar xzf delmont-subsample-sigs.tar.gz
 
+# take a look at one of signatures
+
+cat delmont-subsample-sigs/TARA_RED_MAG_00121.fa.gz.sig | tr ',' '\n' | head -n20
+
 # Next, grab the associated taxonomy spreadsheet
 
 curl -O -L https://github.com/ctb/2017-sourmash-lca/raw/master/tara-delmont-SuppTable3.csv
