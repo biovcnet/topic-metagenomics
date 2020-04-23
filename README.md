@@ -53,13 +53,14 @@ This topic will cover:
   * trimmomatic
 
 # [Lesson 3](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-3): Taxonomic Classification using MinHash sketches
-* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-3/Metagenomics_Lesson_3.pdf) by Eric Collins
+* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-3/Metagenomics_Lesson_3.pdf) and [[Presentation Video]](https://www.youtube.com/watch?v=6LfPzwe9dO8) by Eric Collins
 * The Jaccard Index
 * How does MinHash work?
 * How do Bloom filters work?
 * Choosing a MinHash sketcher
 
 ## Demo 3.1: Taxonomic Classification using sourmash and sendsketch, and quality trimming using bbduk
+* [[Video Tutorial]](https://www.youtube.com/watch?v=RJC0gvWxqF4) by Eric Collins
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-qc/master?urlpath=lab)
 * [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-3/Demo3.1_sourmash_bbduk_sendsketch.sh)
 * Programs used:
