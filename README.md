@@ -68,18 +68,33 @@ This topic will cover:
   * sendsketch
   * bbduk
 
+# Lesson 4(https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-4): Read mapping and read taxonomic classification
+* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-3/Metagenomics_Lesson_3.pdf) and [[Presentation Video]]() by Luis Valentin and Ella Sieradzki
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
+* How does mapping work?
+* Choosing a metagenomic read mapper
+* The Burrows-Wheeler transform and using bowtie2
+
+## Demo 3.1: Mapping reads with bbtools
+* [[Video Tutorial]]() by Ella Sieradzki
+* [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-4/bbmap_tutorial.sh)
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
+* Programs used:
+  * bbmap
+  * bbwrap
+  * bbsplit
+
+## Demo 3.2: Taxonomic classification of reads
+* [[Video Tutorial]]() by Ella Sieradzki
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
+* Programs used:
+  * Kaiju
+  * Centrifuge
+
 ---
 
 # Planned Lessons
 
-
-# Lesson 4: Taxonomic Classification using BWT mapping
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
-* How does mapping work?
-* Choosing a reference genome
-* Choosing a metagenomic read mapper
-* Demo using bowtie, bwa, bbmap, etc.
-* Demo using kaiju, centrifuge?
 
 # Lesson 5: Assembly
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
