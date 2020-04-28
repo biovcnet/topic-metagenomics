@@ -76,7 +76,7 @@ This topic will cover:
 * The Burrows-Wheeler transform and using bowtie2
 
 ## Demo 3.1: Mapping reads with bbtools
-* [[Video Tutorial]]() by Ella Sieradzki
+* [[Video Tutorial]](https://youtu.be/RU-kU8Ei6Gk) by Ella Sieradzki
 * [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-4/bbmap_tutorial.sh)
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * Programs used:
