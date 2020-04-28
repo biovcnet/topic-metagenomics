@@ -75,7 +75,7 @@ This topic will cover:
 * Choosing a metagenomic read mapper
 * The Burrows-Wheeler transform and using bowtie2
 
-## Demo 3.1: Mapping reads with bbtools
+## Demo 4.1: Mapping reads with bbtools
 * [[Video Tutorial]](https://youtu.be/RU-kU8Ei6Gk) by Ella Sieradzki
 * [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-4/bbmap_tutorial.sh)
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
@@ -84,7 +84,7 @@ This topic will cover:
   * bbwrap
   * bbsplit
 
-## Demo 3.2: Taxonomic classification of reads
+## Demo 4.2: Taxonomic classification of reads
 * [[Video Tutorial]]() by Ella Sieradzki
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * Programs used:
