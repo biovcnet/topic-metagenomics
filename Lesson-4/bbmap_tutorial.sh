@@ -9,7 +9,7 @@
 # There is no need to unzip input files
 
 
-
+cd data
 
 # Here we map paired reads from sample SRR5780888 to reference genome DvH, set the minimum %ID to 95% and request that only mapped reads will be written into the output bam file with outm
 # using outm is highly recommended because it reduces the size of the output file significantly
@@ -58,7 +58,7 @@ bbmap.sh ref=DvH_reference.fa.zip in1=SRR5780888_1.fastq.zip in2=SRR5780888_2.fa
 
 # If you have many read files and one reference genome (or set of genomes), you can use a loop in bash with bbmap/bbsplit.
 
-#!/bin/bash
+cd ..
 
 curdir="data/"
 
