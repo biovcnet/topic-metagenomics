@@ -29,6 +29,6 @@ for prefix in `ls *_1.fastq.zip | cut -f1 -d'_' | sort -u`; do
   cat ${prefix}_stats.txt
   
   # remove extra files
-  rm clumped.fq.gz filtered_by_tile.fq.gz trimmed.fq.gz filtered.fq.gz
+  rm trimmed.fq.gz filtered.fq.gz
   
 done
