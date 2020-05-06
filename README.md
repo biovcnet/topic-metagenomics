@@ -69,7 +69,7 @@ This topic will cover:
   * bbduk
 
 # [Lesson 4](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-4): Read mapping and read taxonomic classification
-* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-4/Metagenomics_Lesson_4.pdf) and [[Presentation Video]]() by Luis Valentin and Ella Sieradzki
+* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-4/Metagenomics_Lesson_4.pdf) and [[Presentation Video]](https://youtu.be/emUYU3m3XDU) by Luis Valentin and Ella Sieradzki
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * How does mapping work?
 * Choosing a metagenomic read mapper
@@ -85,7 +85,7 @@ This topic will cover:
   * bbsplit
 
 ## Demo 4.2: Taxonomic classification of reads
-* [[Video Tutorial]]() by Ella Sieradzki
+* [[Video Tutorial]](https://youtu.be/AKWYVTga0Ug) by Ella Sieradzki
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * Programs used:
   * Kaiju
