@@ -74,7 +74,7 @@ for prefix in `ls *_R1_*.fastq.gz | cut -f1 -d'_' | sort -u`; do
   echo ${prefix}
 
   R1=( ${prefix}*_R1_*.gz )
-  R1=( ${prefix}*_R2_*.gz )
+  R2=( ${prefix}*_R2_*.gz )
   
   # Remove optical duplicates
   # This means they are Illumina reads within a certain distance on the flowcell.
