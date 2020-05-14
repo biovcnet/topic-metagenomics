@@ -78,7 +78,6 @@ This topic will cover:
 ## Demo 4.1: Mapping reads with bbtools
 * [[Video Tutorial]](https://youtu.be/RU-kU8Ei6Gk) by Ella Sieradzki
 * [[Bash script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-4/bbmap_tutorial.sh)
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
 * Programs used:
   * bbmap
   * bbwrap
@@ -91,18 +90,25 @@ This topic will cover:
   * Kaiju
   * Centrifuge
 
+# [Lesson 5](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-5): Assembly
+* [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-5/Metagenomics_Lesson_5_Assembly.pdf)
+* Sequencing Statistics
+* Overlap-Layout-Consensus assembly
+* de Bruijn Graph assembly
+* Assembly software
+
+## Demo 5.1: Genome assembly
+* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
+* [[Bash Script]](https://github.com/biovcnet/topic-metagenomics/blob/master/Lesson-5/Demo5.1_spades.sh)
+* Programs used:
+  * bbduk
+  * tadpole
+  * spades
+  * statswrapper
+  
 ---
 
 # Planned Lessons
-
-
-# Lesson 5: Assembly
-* [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
-* How does sequence assembly work?
-* What is a deBruijn graph?
-* Choosing an assembler
-* Demo using tadpole, megahit, SPAdes, etc.
-* + Error correction using BayesHammer/SPAdes, tadpole, etc.
 
 # Lesson 6: Assembly Quality and Statistics
 * [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/biovcnet/metagenomics-binder-assembly/master?urlpath=lab)
