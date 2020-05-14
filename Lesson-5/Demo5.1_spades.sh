@@ -26,16 +26,13 @@ for prefix in `ls *_1.fastq.gz | cut -f1 -d'_' | sort -u`; do
   #Quality-trim and entropy filter the remaining reads.
   # 'entropy' means to filter out reads with low complexity
   # 'maq' is 'mininum average quality' to filter out overall poor reads
-  bbduk.sh in=filtered.fq.gz out=qtrimmed.fq.gz qtrim=r trimq=10 minlen=70 ordered maxns=0 maq=8 entropy=.95 ow=t
-
-  # Error correction
-  tadpole.sh in=qtrimmed.fq.gz out=${prefix}_ecct.fq.gz ecc k=62 ow=t prefilter=2 prepasses=auto
+  bbduk.sh in=filtered.fq.gz out=${prefix}_qtrimmed.fq.gz qtrim=r trimq=10 minlen=70 ordered maxns=0 maq=8 entropy=.95 ow=t
 
   # Assembly using tadpole
-  tadpole.sh in=${prefix}_ecct.fq.gz out=tadpole_contigs.fasta k=124 ow=t prefilter=2 prepasses=auto
+  tadpole.sh in=${prefix}_qtrimmed.fq.gz out=tadpole_contigs.fasta k=124 ow=t prefilter=2 prepasses=auto
   
   # Assembly quality-trimmed reads using SPAdes
-  spades.py -o ${prefix}_spades --12 ${prefix}_ecct.fq.gz --only-assembler
+  spades.py -o ${prefix}_spades --12 ${prefix}_qtrimmed.fq.gz --only-assembler
   
   # calculate assembly statistics
   statswrapper.sh ${prefix}_spades/*.fasta tadpole_contigs.fasta > ${prefix}_stats.txt
