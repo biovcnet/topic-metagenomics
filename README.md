@@ -90,7 +90,7 @@ This topic will cover:
   * Kaiju
   * Centrifuge
 
-# [Lesson 5](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-5): Assembly
+# [Lesson 5](https://github.com/biovcnet/topic-metagenomics/tree/master/Lesson-5): Genome and Metagenome Assembly
 * [[Presentation Slides]](https://github.com/biovcnet/topic-metagenomics/raw/master/Lesson-5/Metagenomics_Lesson_5_Assembly.pdf)
 * Sequencing Statistics
 * Overlap-Layout-Consensus assembly
